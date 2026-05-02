@@ -1588,18 +1588,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Auto-open story modal once per browser profile for first-time visitors.
-  try {
-    if (!window.localStorage.getItem(introModalSeenKey)) {
-      window.localStorage.setItem(introModalSeenKey, '1');
-      window.setTimeout(function () {
-        toggleVideoModal(true);
-      }, 650);
-    }
-  } catch (error) {
-    window.setTimeout(function () {
-      toggleVideoModal(true);
-    }, 650);
-  }
+  // try {
+  //   if (!window.localStorage.getItem(introModalSeenKey)) {
+  //     window.localStorage.setItem(introModalSeenKey, '1');
+  //     window.setTimeout(function () {
+  //       toggleVideoModal(true);
+  //     }, 650);
+  //   }
+  // } catch (error) {
+  //   window.setTimeout(function () {
+  //     toggleVideoModal(true);
+  //   }, 650);
+  // }
 });
 </script>
 
